@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <style>
+      body {
+        padding: 40px 0;
+        background-color: #fffffe;
+        display: flex;
+        justify-content: center;
+        /* flex-direction: column;
+        align-items: center;
+        min-height: 100vh; */
+      }
+      .banner {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+      }
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+      .name {
+        color: #272343;
+        margin: 4px 0;
+      }
+      .description {
+        font-size: 16px;
+      }
+      .link-list {
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .link {
+        background-color: #e3f6f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+      }
+      .link a {
+        color: #2d334a;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+    </style>
   </head>
   <body>
-    <div class="banner">
-      <img src="./images/Ghibli.png" alt="Profile Icon" class="banner-image" />
-      <h1 class="name">Jeeho Lee</h1>
-      <h2 class="description"></h2>
+    <div class="items">
+      <div class="banner">
+        <img src="./images/Ghibli.png" alt="Profile Icon" class="banner-image" />
+        <h1 class="name">Jeeho Lee</h1>
+        <h2 class="description">Hello! Take a look at some of my links!</h2>
+      </div>
+      <div class="link-list">
+        <div class="link">
+          <img class="thumbnail" src="./images/Github_Icon.png" alt="GitHub Icon" />
+          <a href="https://github.com/jeeheezy" target="_blank">GitHub</a>
+        </div>
+        <div class="link">
+          <img class="thumbnail" src="./images/LinkedIn_Icon.png" alt="LinkedIn Icon" />
+          <a href="https://www.linkedin.com/in/jeeho-lee-719852182/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="link">
+          <img class="thumbnail" src="./images/Instagram_Icon.png" alt="Instragram Icon" />
+          <a href="https://www.instagram.com/jeehography/" target="_blank">Instagram</a>
+        </div>
+        <div class="link">
+          <img class="thumbnail" src="./images/Calculator_Icon.png" alt="Calculator Icon" />
+          <a href="https://jeeheezy.github.io/FEM-Tip-Calculator-App/" target="_blank">Tip Calculator/Splitter App</a>
+        </div>
+        <div class="link">
+          <img class="thumbnail" src="./images/Fortune_Slip.jpg" alt="Fortune Advice Slip" />
+          <a href="https://jeeheezy.github.io/FEM-Advice-Generator-App/" target="_blank">Advice Generator App</a>
+        </div>
+      </div>
     </div>
-    <div class="link-list">
-      <div class="link">
-        <img src="./images/Github_Icon.png" />
-        <a href="https://github.com/jeeheezy" target="_blank">GitHub</a>
-       </div>
-       <div class="link">
-        <img src="./images/LinkedIn_Icon.png" />
-        <a href="https://www.linkedin.com/in/jeeho-lee-719852182/" target="_blank">LinkedIn</a>
-       </div>
-       <div class="link">
-        <img src="./images/Instagram_Icon.png" />
-        <a href="https://www.instagram.com/jeehography/" target="_blank">Instagram</a>
-       </div>
-       <div class="link">
-        <img src="./images/Calculator_Icon.png" />
-        <a href="https://jeeheezy.github.io/FEM-Tip-Calculator-App/" target="_blank">Tip Calculator/Splitter App</a>
-       </div>
-       <div class="link">
-        <img src="./images/Fortune_Slip.jpg" />
-        <a href="https://jeeheezy.github.io/FEM-Advice-Generator-App/" target="_blank">Advice Generator App</a>
-       </div>
-    </div>
-    <p>My link in bio</p>
   </body>
 </html>
